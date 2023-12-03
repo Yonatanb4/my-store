@@ -1,0 +1,20 @@
+version: "3"
+services:
+  account-ms:
+    build:
+      context: ./account-ms
+    ports:
+      - "5001:5001"
+
+  transactions-ms:
+    build:
+      context: ./transaction-ms
+    ports:
+      - "5002:5002"
+
+  gateway-ms:
+    build:
+      context: ./gateway-ms
+    ports:
+      - "5050:5050"
+
