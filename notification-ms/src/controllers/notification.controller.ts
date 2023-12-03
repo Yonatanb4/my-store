@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { NotificationModel } from "../models/notification.model";
 import { getErrorMessage, reportError } from "../utils/error_utils";
-import {INotification} from "../utils/common_interfaces";
+import {INotification} from "../interfaces/common_interfaces";
 
 export class NotificationController {
   public static async sendNotification(req: Request, res: Response): Promise<void> {

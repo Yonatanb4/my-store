@@ -1,5 +1,5 @@
 import { Schema, model, Types } from "mongoose";
-import {INotification, IUser} from "../utils/common_interfaces";
+import {INotification, IUser} from "../interfaces/common_interfaces";
 
 const notificationSchema = new Schema({
   userId: { type: Schema.Types.ObjectId, default: new Types.ObjectId, unique: true, required: true },

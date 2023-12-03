@@ -1,5 +1,5 @@
 import { Schema, model, Types } from "mongoose";
-import { IUser } from "../utils/common_interfaces";
+import { IUser } from "../interfaces/common_interfaces";
 
 const userSchema = new Schema({
   userID: { type: Schema.Types.ObjectId, default: new Types.ObjectId, unique: true, required: true },
